@@ -1,4 +1,5 @@
 import React from 'react'
+import ExpenseItem from './ExpenseItem'
 
 const ExpenseList = () => {
     const expenses = [
@@ -9,9 +10,12 @@ const ExpenseList = () => {
         { id: 122333, name: 'Child Care', cost: 500 },
     ]
     return (
-        <ul>
+        <ul className='list-group'>
             {expenses.map((expense) => (
-                console.log(expenses)
+                <ExpenseItem
+                id={expense.id}
+                name={expense.name}
+                cost={expense.cost} />
             ))}
         </ul>
     )
