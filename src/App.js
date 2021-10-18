@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Budget from "./components/Budget";
-import Remaining from "./components/Remaining";
+import AccountBalance from "./components/AccountBalance";
 import Spent from "./components/Spent";
 import ExpenseList from "./components/ExpenseList";
 import AddExpense from "./components/AddExpense";
@@ -17,7 +17,7 @@ const App = () => {
             <Budget />
           </div>
           <div className="col-sm">
-            <Remaining />
+            <AccountBalance />
           </div>
           <div className="col-sm">
             <Spent />
