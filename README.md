@@ -1,3 +1,3 @@
 # React Budget App
 
-This project build as a refresher for the react context api.
+This was project done as a refresher for the react context api.
