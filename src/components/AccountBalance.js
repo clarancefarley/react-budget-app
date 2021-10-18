@@ -8,11 +8,11 @@ const AccountBalance = () => {
     return (total = total + item.cost);
   }, 0);
 
-  console.log(totalExpenses)
+  const alerttype = totalExpenses > budget ? 'alert-danger' : 'alert-success'
 
   return (
     <div>
-      <div className="alert alert-success">
+      <div className={`alert ${alerttype}`}>
         <span>Account Balance: ${ budget - totalExpenses }</span>
       </div>
     </div>
